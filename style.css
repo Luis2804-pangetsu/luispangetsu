@@ -90,7 +90,7 @@ ul{list-style:none}
 }
 .cover__cta:hover{letter-spacing:.3em}
 
-/* Photo Frame (Smaller as requested previously) */
+/* Photo Frame (Smaller) */
 .cover__photo-frame{
   position:relative;
   aspect-ratio: 1/1;
@@ -134,20 +134,26 @@ ul{list-style:none}
 }
 
 /* ============ ABOUT ============ */
-.about{padding:5rem 3rem;border-bottom:1px solid #1a1a1a}
-.about__grid{
-  display:grid;
-  grid-template-columns:1.2fr 1fr;
-  gap:4rem;
+.about{
+  padding:5rem 3rem;
+  border-bottom:1px solid #1a1a1a;
 }
 .about__title{
   font-family:'Playfair Display',serif;
-  font-size:clamp(1.8rem,3vw,2.8rem);
+  font-size:clamp(2rem,4vw,3.5rem);
   font-weight:400;
-  line-height:1.25;
+  line-height:1.2;
+  margin-bottom:2rem;
 }
 .about__title span{font-weight:900;font-style:italic}
-.about__body p{margin-bottom:1.2rem;font-size:1rem;color:#333}
+.about__body{
+  max-width: 800px; /* Keeps text readable and neatly below the title */
+}
+.about__body p{
+  margin-bottom:1.2rem;
+  font-size:1.05rem;
+  color:#333;
+}
 .dropcap::first-letter{
   font-family:'Playfair Display',serif;
   font-size:5rem;
@@ -157,7 +163,7 @@ ul{list-style:none}
   font-weight:900;
 }
 
-/* ============ PROFILE SECTION (Skills, Contact, Hobby) ============ */
+/* ============ PROFILE SECTION (Skills, Contact, Hobby Boxes) ============ */
 .profile-section{padding:5rem 3rem;border-bottom:1px solid #1a1a1a}
 .profile-grid{
   display:grid;
@@ -165,7 +171,7 @@ ul{list-style:none}
   gap:2rem;
 }
 .profile-box{
-  background:#fff; /* Slight contrast box */
+  background:#fff;
   border:1px solid #1a1a1a;
   padding:2rem;
   display:flex;
@@ -217,6 +223,6 @@ ul{list-style:none}
   .nav__date,.nav__meta{text-align:center}
   .nav__menu{gap:1rem;flex-wrap:wrap; justify-content: center;}
   .cover,.about,.profile-section{padding:3rem 1.5rem}
-  .cover__grid,.about__grid{grid-template-columns:1fr;gap:2.5rem}
+  .cover__grid{grid-template-columns:1fr;gap:2.5rem}
   .profile-grid{grid-template-columns:1fr} /* Stack boxes on mobile */
 }
