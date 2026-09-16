@@ -1,5 +1,5 @@
 /* ============ RESET & BASE ============ */
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+*,::before,::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
   font-family:'Inter',sans-serif;
@@ -46,6 +46,7 @@ em{font-family:'Playfair Display',serif;font-style:italic}
   font-size:.8rem;
   text-transform:uppercase;
   letter-spacing:.2em;
+  list-style: none;
 }
 .nav__menu a{position:relative;transition:color .3s}
 .nav__menu a::after{
@@ -95,10 +96,12 @@ em{font-family:'Playfair Display',serif;font-style:italic}
 }
 .cover__cta:hover{letter-spacing:.3em}
 
-/* 👉 SPOT FOTO FRAME */
+/* 👉 SPOT FOTO FRAME (Made Smaller) */
 .cover__photo-frame{
   position:relative;
-  aspect-ratio:3/4;
+  aspect-ratio: 1/1; /* Changed from 3/4 to make it shorter */
+  max-width: 380px; /* Constrains the width */
+  margin: 0 auto; /* Centers it within its grid column */
   overflow:hidden;
   border:1px solid #1a1a1a;
   background:#d9c7b0;
@@ -155,11 +158,12 @@ em{font-family:'Playfair Display',serif;font-style:italic}
 }
 .about__stats{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns: 1fr; /* Changed to 1 column since we only have 1 stat now */
   gap:1rem;
   margin-top:2rem;
   padding-top:2rem;
   border-top:1px solid #1a1a1a;
+  max-width: 200px;
 }
 .about__stats div{display:flex;flex-direction:column}
 .about__stats strong{
@@ -197,7 +201,6 @@ em{font-family:'Playfair Display',serif;font-style:italic}
 }
 .filter button.active,
 .filter button:hover{background:#1a1a1a;color:#f4efe6}
-
 .works__grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
@@ -213,6 +216,7 @@ em{font-family:'Playfair Display',serif;font-style:italic}
   margin-bottom:1rem;
   position:relative;
   overflow:hidden;
+  background: #e0d6c8; /* Fallback background */
 }
 .work__img::after{
   content:'VIEW →';
@@ -234,46 +238,6 @@ em{font-family:'Playfair Display',serif;font-style:italic}
   font-size:1.3rem;font-weight:700;
 }
 
-/* ============ CONTACT ============ */
-.contact{
-  padding:6rem 3rem;
-  text-align:center;
-  border-bottom:1px solid #1a1a1a;
-}
-.contact__title{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(2rem,5vw,4rem);
-  font-weight:900;
-  line-height:1.1;
-  margin-bottom:1.5rem;
-  max-width:800px;
-  margin-left:auto;margin-right:auto;
-}
-.contact__sub{
-  font-size:1.1rem;color:#555;
-  margin-bottom:2.5rem;
-}
-.contact__btn{
-  display:inline-block;
-  font-family:'Playfair Display',serif;
-  font-size:1.5rem;font-style:italic;
-  border-bottom:1px solid #1a1a1a;
-  padding-bottom:.3rem;
-  transition:letter-spacing .3s;
-}
-.contact__btn:hover{letter-spacing:.05em}
-.contact__socials{
-  display:flex;justify-content:center;gap:2.5rem;
-  margin-top:4rem;
-  font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;
-}
-.contact__socials a{position:relative}
-.contact__socials a::after{
-  content:'';position:absolute;left:0;bottom:-4px;
-  width:0;height:1px;background:#1a1a1a;transition:width .3s;
-}
-.contact__socials a:hover::after{width:100%}
-
 /* ============ FOOTER ============ */
 .footer{
   padding:2rem 3rem;
@@ -291,7 +255,7 @@ em{font-family:'Playfair Display',serif;font-style:italic}
   .nav{padding:1rem 1.5rem}
   .nav__inner{grid-template-columns:1fr;text-align:center;gap:.5rem}
   .nav__date,.nav__meta{text-align:center}
-  .nav__menu{gap:1rem;flex-wrap:wrap}
+  .nav__menu{gap:1rem;flex-wrap:wrap; justify-content: center;}
   .cover,.about,.works,.contact{padding:3rem 1.5rem}
   .cover__grid,.about__grid{grid-template-columns:1fr;gap:2.5rem}
   .works__grid{grid-template-columns:repeat(2,1fr)}
