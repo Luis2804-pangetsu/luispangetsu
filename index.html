@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Portfolio</title>
+  <title>Luis Pangetsu — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,900&display=swap" rel="stylesheet">
@@ -14,15 +14,14 @@
   <!-- ============ NAVIGATION ============ -->
   <nav class="nav">
     <div class="nav__inner">
-      <div class="nav__date"></div> <!-- Date removed -->
+      <div class="nav__date"></div>
       <div class="nav__logo">THE PORTFOLIO</div>
-      <div class="nav__meta"></div> <!-- Volume & Issue removed -->
+      <div class="nav__meta"></div>
     </div>
     <ul class="nav__menu">
       <li><a href="#cover">Cover</a></li>
       <li><a href="#about">About</a></li>
-      <li><a href="#works">Works</a></li>
-      <!-- Contact link removed -->
+      <li><a href="#profile">Profile</a></li>
     </ul>
   </nav>
 
@@ -31,14 +30,15 @@
     <div class="cover__grid">
       <div class="cover__text">
         <span class="cover__kicker">The Portfolio</span>
-        <h1 class="cover__title">The Art of Designing with Purpose.</h1>
-        <p class="cover__sub">An editorial journey through creativity, craft, and the stories behind every project.</p>
-        <a href="#about" class="cover__cta">Read the Issue →</a>
+        <!-- Replaced removed text with your name for a strong cover -->
+        <h1 class="cover__title">Luis Pangetsu</h1>
+        <a href="#about" class="cover__cta">Read My Story →</a>
       </div>
       <div class="cover__photo">
         <div class="cover__photo-frame">
-          <img id="profilePhoto" src="your-photo.jpg" alt="Profile Photo">
-          <span class="cover__photo-caption">Photo by You — 2026</span>
+          <!-- IMPORTANT: Save your uploaded image as 'profile.jpg' in the same folder -->
+          <img id="profilePhoto" src="profile.jpg" alt="Luis Pangetsu">
+          <span class="cover__photo-caption">Photo — 2026</span>
         </div>
       </div>
     </div>
@@ -49,86 +49,62 @@
     <span class="section-label">Chapter 01 — About</span>
     <div class="about__grid">
       <div class="about__lead">
-        <h2 class="about__title">Hello, I'm <span>Your Name</span>.</h2>
-        <!-- Removed "a designer & developer..." -->
+        <h2 class="about__title">Hello, I'm <span>Luis Pangetsu</span>.</h2>
       </div>
       <div class="about__body">
-        <p class="dropcap">Every project is a story. I believe that good design is not only beautiful to look at, but also able to convey a message clearly — like a magazine page that makes the reader want to stay a while.</p>
-        <p>With a background in UI/UX and front-end development, I combine editorial aesthetics with modern functionality. From brand identity to interactive websites, every piece is crafted with attention to typographic detail, visual rhythm, and user experience.</p>
-        
-        <div class="about__stats">
-          <!-- Removed Years Exp. and Clients, kept only Projects -->
-          <div>
-            <strong>50+</strong>
-            <span>Projects</span>
-          </div>
-        </div>
+        <p class="dropcap">I am an Information Systems student with a strong interest in technology, software solutions, and data analytics. Possessing a solid foundation in hardware maintenance, technical troubleshooting, and system design, I enjoy breaking down complex problems into clear, efficient digital solutions.</p>
+        <p>Driven by continuous learning, I actively explore software development, market dynamics, and tech innovation. I aim to apply my technical background and analytical skills to build impactful digital tools and pursue a career in software engineering and technology consulting.</p>
+        <!-- Stats (50+ Projects) removed as requested -->
       </div>
     </div>
   </section>
 
-  <!-- ============ WORKS ============ -->
-  <section id="works" class="works">
-    <span class="section-label">Chapter 02 — Selected Works</span>
-    <h2 class="works__title">A Curated Collection</h2>
+  <!-- ============ PROFILE (Skills, Contact, Hobby) ============ -->
+  <section id="profile" class="profile-section">
+    <span class="section-label">Chapter 02 — Profile Details</span>
+    <h2 class="section-title">Skills, Contact & Hobbies</h2>
     
-    <div class="filter">
-      <button class="active" data-filter="all">All</button>
-      <button data-filter="web">Web Design</button>
-      <button data-filter="brand">Branding</button>
-      <button data-filter="uiux">UI/UX</button>
-    </div>
+    <div class="profile-grid">
+      <!-- Box 1: Skills -->
+      <div class="profile-box">
+        <h3 class="box-title">My Skills</h3>
+        <ul class="box-list">
+          <li>Software Development</li>
+          <li>Data Analytics</li>
+          <li>System Design</li>
+          <li>Hardware Maintenance</li>
+          <li>Technical Troubleshooting</li>
+          <li>UI/UX Concepts</li>
+        </ul>
+      </div>
 
-    <div class="works__grid">
-      <div class="work" data-cat="web">
-        <div class="work__img"><img src="work1.jpg" alt="Editorial Magazine Redesign"></div>
-        <div class="work__info">
-          <span class="work__cat">Web Design</span>
-          <h4>Editorial Magazine Redesign</h4>
-        </div>
+      <!-- Box 2: Contact Information -->
+      <div class="profile-box">
+        <h3 class="box-title">Contact Information</h3>
+        <ul class="box-list contact-list">
+          <li><strong>Email:</strong> luis.pangetsu@email.com</li>
+          <li><strong>Phone:</strong> +62 812 3456 7890</li>
+          <li><strong>Location:</strong> Indonesia</li>
+          <li><strong>LinkedIn:</strong> /in/luispangetsu</li>
+        </ul>
       </div>
-      <div class="work" data-cat="brand">
-        <div class="work__img"><img src="work2.jpg" alt="Atelier Noir Identity"></div>
-        <div class="work__info">
-          <span class="work__cat">Branding</span>
-          <h4>Atelier Noir Identity</h4>
-        </div>
-      </div>
-      <div class="work" data-cat="uiux">
-        <div class="work__img"><img src="work3.jpg" alt="Finance App Concept"></div>
-        <div class="work__info">
-          <span class="work__cat">UI/UX</span>
-          <h4>Finance App Concept</h4>
-        </div>
-      </div>
-      <div class="work" data-cat="web">
-        <div class="work__img"><img src="work4.jpg" alt="Botanical Studio Site"></div>
-        <div class="work__info">
-          <span class="work__cat">Web Design</span>
-          <h4>Botanical Studio Site</h4>
-        </div>
-      </div>
-      <div class="work" data-cat="brand">
-        <div class="work__img"><img src="work5.jpg" alt="Golden Hour Café"></div>
-        <div class="work__info">
-          <span class="work__cat">Branding</span>
-          <h4>Golden Hour Café</h4>
-        </div>
-      </div>
-      <div class="work" data-cat="uiux">
-        <div class="work__img"><img src="work6.jpg" alt="Travel Journal App"></div>
-        <div class="work__info">
-          <span class="work__cat">UI/UX</span>
-          <h4>Travel Journal App</h4>
-        </div>
+
+      <!-- Box 3: Hobbies -->
+      <div class="profile-box">
+        <h3 class="box-title">Hobbies</h3>
+        <ul class="box-list">
+          <li>Exploring Tech Innovation</li>
+          <li>Problem Solving</li>
+          <li>Reading Market Dynamics</li>
+          <li>Coding Projects</li>
+        </ul>
       </div>
     </div>
   </section>
 
   <!-- ============ FOOTER ============ -->
   <footer class="footer">
-    <div>© 2026 The Portfolio — All rights reserved.</div>
-    <!-- Removed "Crafted with ink & pixels." -->
+    <div>© 2026 Luis Pangetsu — All rights reserved.</div>
   </footer>
 
   <script src="script.js"></script>
