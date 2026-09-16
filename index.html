@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PORTFOLIO — Magazine Edition</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav">
+    <div class="nav__inner">
+      <div class="nav__date">Wednesday, September 16, 2026</div>
+      <h1 class="nav__logo">THE PORTFOLIO</h1>
+      <div class="nav__meta">Vol. 01 — Issue 09</div>
+    </div>
+    <nav class="nav__menu">
+      <a href="#cover">Cover</a>
+      <a href="#about">About</a>
+      <a href="#works">Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO / COVER -->
+  <section id="cover" class="cover">
+    <div class="cover__grid">
+      <div class="cover__text">
+        <span class="cover__kicker">Featured Story</span>
+        <h2 class="cover__title">The Art of <em>Designing</em> with Purpose.</h2>
+        <p class="cover__sub">An editorial journey through creativity, craft, and the stories behind every project.</p>
+        <a href="#about" class="cover__cta">Read the Issue →</a>
+      </div>
+
+      <!-- 👉 SPOT FOTO: ganti src="foto.jpg" dengan nama file foto kamu -->
+      <div class="cover__photo">
+        <div class="cover__photo-frame">
+          <img src="foto.jpg" alt="Foto Profil" id="profilePhoto" />
+          <span class="cover__photo-caption">Photo by You — 2026</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="section-label">Chapter 01 — About</div>
+    <div class="about__grid">
+      <div class="about__lead">
+        <h3 class="about__title">Hello, I'm <span>Your Name</span> — a designer & developer crafting digital experiences that feel like a well-written article.</h3>
+      </div>
+      <div class="about__body">
+        <p class="dropcap">Setiap proyek adalah sebuah cerita. Saya percaya bahwa desain yang baik tidak hanya indah dipandang, tetapi juga mampu menyampaikan pesan dengan jelas — seperti halaman majalah yang membuat pembaca betah berlama-lama.</p>
+        <p>Dengan latar belakang di bidang UI/UX dan front-end development, saya menggabungkan estetika editorial dengan fungsionalitas modern. Dari brand identity hingga website interaktif, setiap karya dibuat dengan perhatian pada detail tipografi, ritme visual, dan pengalaman pengguna.</p>
+        <div class="about__stats">
+          <div><strong>50+</strong><span>Projects</span></div>
+          <div><strong>5</strong><span>Years Exp.</span></div>
+          <div><strong>30+</strong><span>Clients</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <section id="works" class="works">
+    <div class="section-label">Chapter 02 — Selected Works</div>
+    <h3 class="works__title">A Curated Collection</h3>
+
+    <div class="filter">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="web">Web Design</button>
+      <button data-filter="brand">Branding</button>
+      <button data-filter="ui">UI/UX</button>
+    </div>
+
+    <div class="works__grid">
+      <article class="work" data-cat="web">
+        <div class="work__img" style="background:#d9c7b0"></div>
+        <div class="work__info">
+          <span class="work__cat">Web Design</span>
+          <h4>Editorial Magazine Redesign</h4>
+        </div>
+      </article>
+      <article class="work" data-cat="brand">
+        <div class="work__img" style="background:#1a1a1a"></div>
+        <div class="work__info">
+          <span class="work__cat">Branding</span>
+          <h4>Atelier Noir Identity</h4>
+        </div>
+      </article>
+      <article class="work" data-cat="ui">
+        <div class="work__img" style="background:#8b2e2e"></div>
+        <div class="work__info">
+          <span class="work__cat">UI/UX</span>
+          <h4>Finance App Concept</h4>
+        </div>
+      </article>
+      <article class="work" data-cat="web">
+        <div class="work__img" style="background:#2d3e2f"></div>
+        <div class="work__info">
+          <span class="work__cat">Web Design</span>
+          <h4>Botanical Studio Site</h4>
+        </div>
+      </article>
+      <article class="work" data-cat="brand">
+        <div class="work__img" style="background:#c9a96e"></div>
+        <div class="work__info">
+          <span class="work__cat">Branding</span>
+          <h4>Golden Hour Café</h4>
+        </div>
+      </article>
+      <article class="work" data-cat="ui">
+        <div class="work__img" style="background:#4a4a6a"></div>
+        <div class="work__info">
+          <span class="work__cat">UI/UX</span>
+          <h4>Travel Journal App</h4>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="section-label">Chapter 03 — Get in Touch</div>
+    <h3 class="contact__title">Let's create the next <em>cover story</em> together.</h3>
+    <p class="contact__sub">Available for freelance projects, collaborations, and interesting conversations.</p>
+    <a href="mailto:hello@yourname.com" class="contact__btn">hello@yourname.com</a>
+
+    <div class="contact__socials">
+      <a href="#">Instagram</a>
+      <a href="#">Behance</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Dribbble</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div>© 2026 The Portfolio — All rights reserved.</div>
+    <div>Crafted with ink & pixels.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
