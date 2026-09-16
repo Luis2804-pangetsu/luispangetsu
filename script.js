@@ -1,6 +1,6 @@
 // ============ SCROLL REVEAL ============
 const revealEls = document.querySelectorAll(
-  '.cover__text, .cover__photo, .about__lead, .about__body, .profile-box'
+  '.cover__text, .cover__photo, .about__title, .about__body, .profile-box'
 );
 revealEls.forEach(el => el.classList.add('reveal'));
 
@@ -33,7 +33,6 @@ window.addEventListener('scroll', () => {
 const profilePhoto = document.getElementById('profilePhoto');
 if(profilePhoto) {
   profilePhoto.addEventListener('error', () => {
-    // If photo doesn't exist, show an elegant placeholder
     profilePhoto.style.display = 'none';
     profilePhoto.parentElement.innerHTML += `<div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#1a1a1a;font-family:'Playfair Display',serif;"> 
       <div style="font-size:4rem;font-weight:900;">LUIS</div> 
